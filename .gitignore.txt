@@ -1,0 +1,31 @@
+# ==========================================
+# STM32CubeMX & Keil5 专属忽略清单
+# ==========================================
+
+# 忽略 Keil 编译产生的中间文件和二进制文件
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.map
+*.axf
+*.lnp
+*.sct
+*.hex
+*.bin
+*.build_log.htm
+
+# 忽略个人的 Keil 界面布局缓存（非常重要！否则每次打开界面变了都会提示代码有改动）
+*.uvguix.*
+*.scvd
+*.uvoptx
+
+# 忽略 CubeMX 产生的备份文件
+*.bak
+
+# 忽略 MDK-ARM 文件夹下的编译输出目录（通常叫 Objects 和 Listings）
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+Debug/
+Release/
