@@ -29,3 +29,21 @@ MDK-ARM/Objects/
 MDK-ARM/Listings/
 Debug/
 Release/
+
+# =========================
+# PC_YOLO_Vision 专属忽略规则
+# =========================
+# 忽略庞大的数据集图片
+PC_YOLO_Vision/data/
+PC_YOLO_Vision/datasets/
+
+# 忽略训练时自动生成的大量缓存和日志文件夹
+PC_YOLO_Vision/runs/
+
+# 忽略官方的大权重文件，只保留 models 文件夹下的
+*.pt
+!PC_YOLO_Vision/models/*.pt
+
+# Python 缓存
+__pycache__/
+*.py[cod]
