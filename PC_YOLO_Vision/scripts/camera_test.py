@@ -2,7 +2,8 @@ import cv2
 from ultralytics import YOLO
 
 # 加载官方最轻量的模型
-model = YOLO("../models/yolo11n.pt")
+model = YOLO(r"C:\Pycharm_Projects\Water-Surface-Cleaner-Boat\PC_YOLO_Vision\runs\boat_model_v2\weights\best.pt")
+
 
 # 打开摄像头
 cap = cv2.VideoCapture(0)
